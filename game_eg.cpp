@@ -251,6 +251,6 @@ void game(game_state *game)
         }
         }
     }
-    delete avalible_mv;
+    delete[] avalible_mv;
     return;
 }
