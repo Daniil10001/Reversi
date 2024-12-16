@@ -26,8 +26,5 @@ target_compile_definitions(MESSAGE PUBLIC MESSAGE)
 
 add_executable( Reversi main.cpp )
 
-set(LIBSG "BOARD ENGINE MESSAGE")
-cmake_print_variables(LIBSG)
-#add_dependencies(Reversi BOARD ENGINE MESSAGE)
 target_link_libraries( Reversi PUBLIC ${LIBS} -lpanel  BOARD ENGINE MESSAGE)
  
